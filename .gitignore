@@ -1,0 +1,19 @@
+# --- IDE Specific Files ---
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.nbproject/
+
+# --- Build & Output ---
+bin/
+out/
+target/
+build/
+*.class
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
