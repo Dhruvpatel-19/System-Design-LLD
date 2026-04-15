@@ -19,7 +19,7 @@ class SingletonObject {
     }
 }
 
-class Main{
+class SingletonObjectMain{
     public static void main(String[] args) {
       
         //without synchronization, both threads may get different objects if method called at the same time 

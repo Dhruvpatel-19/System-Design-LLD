@@ -24,7 +24,7 @@ class SimpleSingleton {
 
 }
 
-class Main{
+class SimpleSingletonMain{
     public static void main(String[] args) {
         //error
         //SimpleSingleton object = new SimpleSingleton();
