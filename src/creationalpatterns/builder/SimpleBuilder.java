@@ -2,7 +2,7 @@ package creationalpatterns.builder;
 
 //Builder class to construct phone object step-by-step 
 //which gives better control over object creation
-//and improves readability by avoiding constructors with too many parameters,  
+//and improves readability by avoiding constructors with too many parameters  
 class PhoneBuilder{
     private String os;
     private String processor;
@@ -10,7 +10,7 @@ class PhoneBuilder{
     private int battery;
     private int camera;
 
-    //retunr object after setting any particular feild for method chaining
+    //retunr builder class object after setting any particular feild for method chaining
     public PhoneBuilder setOs(String os){
         this.os = os;
         return this;
