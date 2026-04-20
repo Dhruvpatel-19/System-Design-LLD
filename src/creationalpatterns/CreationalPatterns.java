@@ -37,10 +37,30 @@ package creationalpatterns;
  * → Use EnumSingleton in production
  * → Use Bill Pugh when flexibility is needed
  *
+ * 
+ * 
+ * ================================
+ * 2. Builder Pattern
+ * ================================
+ * Used to construct complex objects step-by-step.
+ * 
+ * Follow this learning sequence:
+ *
+ * 1. Simple Builder
+ *    - Basic step-by-step object creation
+ *
+ * 2. Builder with Director (Classic GoF)
+ *    - Director controls construction process
+ *
+ * 3. Static Inner Builder (Most Common)
+ *    - Builder inside product class
+ *    - Cleaner and widely used in real-world Java
+ *
+ * 
+ * 
  * ================================
  * (Future)
  * ================================
- * - Builder Pattern
  * - Prototype Pattern
  * - Factory Pattern
  */
