@@ -59,9 +59,16 @@ package creationalpatterns;
  * 
  * 
  * ================================
+ * 3. Prototype Pattern
+ * ================================
+ * Creates new objects by cloning existing ones instead of creating from scratch.
+ * Useful when object creation is expensive and many similar objects are needed.
+ * 
+ * 
+ * 
+ * ================================
  * (Future)
  * ================================
- * - Prototype Pattern
  * - Factory Pattern
  */
 public class CreationalPatterns {
