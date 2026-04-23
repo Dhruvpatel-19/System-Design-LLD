@@ -67,9 +67,17 @@ package creationalpatterns;
  * 
  * 
  * ================================
+ * 4. Factory Method Pattern
+ * ================================
+ * Creates objects through a factory method instead of using new directly.
+ * Encapsulates object creation logic and promotes loose coupling between client and concrete classes.
+ * 
+ * 
+ * 
+ * ================================
  * (Future)
  * ================================
- * - Factory Pattern
+ * - Abstract Factory Pattern
  */
 public class CreationalPatterns {
 
