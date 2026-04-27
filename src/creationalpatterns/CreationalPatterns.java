@@ -75,9 +75,11 @@ package creationalpatterns;
  * 
  * 
  * ================================
- * (Future)
+ * 5. Abstract Factory Pattern
  * ================================
- * - Abstract Factory Pattern
+ * Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+ * Ensures that the created objects are compatible and belong to a common theme or product family
+ * 
  */
 public class CreationalPatterns {
 

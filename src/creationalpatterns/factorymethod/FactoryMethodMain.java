@@ -6,15 +6,15 @@ import java.util.Map;
 //1. Encapsulation of creation logic
 //2. loose coupling as client depends on interface
 //3. follow Open/Closed principle : class PushNotification and class PushNotificationFactory can be added
-//without changin existing code
+//without changing existing code. However, factory selection logic still requires modification.
 
 
-//common interface
+//abstract product, common interface
 interface Notification {
     void notifyUser();
 }
 
-//concrete implementations
+//concrete products
 class EmailNotification implements Notification {
     //business logic...
     @Override
@@ -32,19 +32,19 @@ class SMSNotification implements Notification {
 }
 
 //factory class
-abstract class NotificationFactory {
-    abstract Notification createNotification();
+interface NotificationFactory {
+    Notification createNotification();
 }
 
 //concrete factories
-class EmailNotificationFactory extends NotificationFactory {
+class EmailNotificationFactory implements NotificationFactory {
     //complex logic here
     @Override
     public Notification createNotification() {
         return new EmailNotification();
     }
 }
-class SMSNotificationFactory extends NotificationFactory {
+class SMSNotificationFactory implements NotificationFactory {
     //complex logic
     @Override
     public Notification createNotification() {
