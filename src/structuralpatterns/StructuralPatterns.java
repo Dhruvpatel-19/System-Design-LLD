@@ -37,10 +37,28 @@ package structuralpatterns;
  *
  *
  * ================================
+ * 4. Decorator Pattern
+ * ================================
+ * Attaches additional responsibilities/behaviors to an object dynamically at runtime 
+ * without modifying its original code.
+ * It provides a flexible alternative to subclassing for extending functionality.
+ * Useful when you want to extend functionality in a flexible and reusable way instead of using inheritance.
+ *
+ *
+ *
+ * ================================
+ * 5. Facade Pattern
+ * ================================
+ * Provides a simplified, unified interface to a complex subsystem.
+ * It hides the complexity of multiple classes and provides an easy-to-use entry point.
+ * Useful when a system has many interdependent classes and you want to reduce
+ * client-side complexity and coupling.
+ * 
+ * 
+ * 
+ * ================================
  * (Future)
  * ================================
- * - Decorator Pattern
- * - Facade Pattern
  * - Flyweight Pattern
  * - Proxy Pattern
  */
