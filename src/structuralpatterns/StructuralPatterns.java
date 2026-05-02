@@ -26,7 +26,6 @@ package structuralpatterns;
  *
  * 
  *
- *
  * ================================
  * 3. Composite Pattern
  * ================================
@@ -57,10 +56,21 @@ package structuralpatterns;
  * 
  * 
  * ================================
- * (Future)
+ * 6. Flyweight Pattern
  * ================================
- * - Flyweight Pattern
- * - Proxy Pattern
+ * Reduces memory usage by sharing common (intrinsic) data between multiple objects.
+ * Instead of creating new objects, it reuses existing ones when possible.
+ * Useful when dealing with a large number of similar objects.
+ * 
+ * 
+ * 
+ * ================================
+ * 7. Proxy Pattern
+ * ================================
+ * Provides a placeholder or surrogate object to control access to another object.
+ * The proxy forwards requests to the real object while adding extra behavior (e.g., logging, security, caching).
+ * Useful when you want to add control without modifying the original class.
+ * 
  */
 public class StructuralPatterns {
     public static void main(String[] args) {

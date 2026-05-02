@@ -63,7 +63,7 @@ package creationalpatterns;
  * ================================
  * Creates new objects by cloning existing ones instead of creating from scratch.
  * Useful when object creation is expensive and many similar objects are needed.
- * Shallow and Deep xopy variations are included in one file.
+ * Shallow and Deep copy variations are included in one file.
  * 
  * 
  * 
