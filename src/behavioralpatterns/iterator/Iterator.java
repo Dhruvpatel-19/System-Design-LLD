@@ -32,6 +32,10 @@ class Employee {
         this.salary = salary;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public double getSalary() {
         return salary;
     }

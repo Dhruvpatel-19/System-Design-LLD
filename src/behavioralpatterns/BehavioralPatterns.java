@@ -43,10 +43,26 @@ package behavioralpatterns;
  * 
  * 
  * ================================
+ * 5. Mediator Pattern
+ * ================================
+ * Defines an object that centralizes communication between multiple objects to reduce direct dependencies.
+ * Objects interact through the mediator instead of communicating with each other directly.
+ * Useful for complex systems where many objects need to interact in a controlled manner.
+ *
+ * 
+ * 
+ * ================================
+ * 6. Memento Pattern
+ * ================================
+ * Captures and stores an object's internal state without exposing its implementation details.
+ * Allows restoring the object to a previous state (undo/rollback functionality).
+ * Useful for implementing undo operations, checkpoints, or history tracking.
+ * 
+ * 
+ * 
+ * ================================
  * (Future)
  * ================================
- * - Mediator Pattern
- * - Memento Pattern
  * - Observer Pattern
  * - State Pattern
  * - Strategy Pattern
