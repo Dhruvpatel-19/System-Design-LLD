@@ -23,7 +23,6 @@ package behavioralpatterns;
  * 
  * 
  * 
- * 
  * ================================
  * 3. Interpreter Pattern
  * ================================
@@ -61,11 +60,35 @@ package behavioralpatterns;
  * 
  * 
  * ================================
+ * 7. Observer Pattern
+ * ================================
+ * Defines a one-to-many dependency between objects so that when one object changes state,
+ * all dependent objects are notified and updated automatically.
+ * Useful for event-driven systems, notifications, and publish-subscribe mechanisms.
+ * 
+ * 
+ * 
+ * ================================
+ * 8. State Pattern
+ * ================================
+ * Allows an object to change its behavior when its internal state changes.
+ * Encapsulates state-specific behavior into separate state classes.
+ * Useful when an object has multiple states with different behaviors and frequent state transitions.
+ * 
+ * 
+ * 
+ * ================================
+ * 9. Strategy Pattern
+ * ================================
+ * Defines a family of algorithms and encapsulates each one into separate classes.
+ * Allows algorithms or behaviors to be selected and changed dynamically at runtime.
+ * Useful when multiple approaches exist for a task and switching behavior is needed.
+ * 
+ * 
+ * 
+ * ================================
  * (Future)
  * ================================
- * - Observer Pattern
- * - State Pattern
- * - Strategy Pattern
  * - Template Method Pattern
  * - Visitor Pattern
  */
