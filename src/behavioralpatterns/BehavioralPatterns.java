@@ -87,10 +87,21 @@ package behavioralpatterns;
  * 
  * 
  * ================================
- * (Future)
+ * 10. Template Method Pattern
  * ================================
- * - Template Method Pattern
- * - Visitor Pattern
+ * Defines the skeleton of an algorithm in a base class while allowing subclasses to override specific steps.
+ * Ensures the overall structure of the algorithm remains unchanged while customizing certain parts.
+ * Useful when multiple classes follow the same process but differ in implementation details.
+ * 
+ * 
+ * 
+ * ================================
+ * 11. Visitor Pattern
+ * ================================
+ * Separates an algorithm from the objects on which it operates by moving logic into a visitor class.
+ * Allows adding new operations without modifying the object structure.
+ * Useful when you need to perform different operations on a set of object structures.
+ * 
  */
 public class BehavioralPatterns {
     public static void main(String[] args) {
