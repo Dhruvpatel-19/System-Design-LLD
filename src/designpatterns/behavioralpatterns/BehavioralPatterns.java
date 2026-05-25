@@ -1,0 +1,110 @@
+package designpatterns.behavioralpatterns;
+
+/*
+ * Behavioral Design Patterns (Java)
+ *
+ * Behavioral Design Patterns focus on how objects communicate and interact with each other.
+ * 
+ * ================================
+ * 1. Chain of Responsibility Pattern
+ * ================================
+ * Allows a request to pass through a chain of handlers until one of them handles it.
+ * Each handler decides whether to process the request or forward it to the next handler.
+ * Useful for decoupling sender and receiver and creating flexible processing pipelines.
+ * 
+ * 
+ * 
+ * ================================
+ * 2. Command Pattern
+ * ================================
+ * Encapsulates a request as an object, allowing parameterization of clients with different requests.
+ * Decouples the sender (invoker) from the receiver and supports undo/redo operations.
+ * Useful when you want to queue, log, or execute requests dynamically.
+ * 
+ * 
+ * 
+ * ================================
+ * 3. Interpreter Pattern
+ * ================================
+ * Defines a grammar for a language and provides an interpreter to evaluate expressions.
+ * Represents expressions as a tree structure where each node interprets part of the expression.
+ * Useful for simple language parsing, rule engines, or expression evaluation.
+ * 
+ * 
+ * 
+ * ================================
+ * 4. Iterator Pattern
+ * ================================
+ * Provides a way to access elements of a collection sequentially without exposing its internal structure.
+ * Encapsulates traversal logic in a separate iterator object.
+ * Useful for uniform traversal of different collection types.
+ * 
+ * 
+ * 
+ * ================================
+ * 5. Mediator Pattern
+ * ================================
+ * Defines an object that centralizes communication between multiple objects to reduce direct dependencies.
+ * Objects interact through the mediator instead of communicating with each other directly.
+ * Useful for complex systems where many objects need to interact in a controlled manner.
+ *
+ * 
+ * 
+ * ================================
+ * 6. Memento Pattern
+ * ================================
+ * Captures and stores an object's internal state without exposing its implementation details.
+ * Allows restoring the object to a previous state (undo/rollback functionality).
+ * Useful for implementing undo operations, checkpoints, or history tracking.
+ * 
+ * 
+ * 
+ * ================================
+ * 7. Observer Pattern
+ * ================================
+ * Defines a one-to-many dependency between objects so that when one object changes state,
+ * all dependent objects are notified and updated automatically.
+ * Useful for event-driven systems, notifications, and publish-subscribe mechanisms.
+ * 
+ * 
+ * 
+ * ================================
+ * 8. State Pattern
+ * ================================
+ * Allows an object to change its behavior when its internal state changes.
+ * Encapsulates state-specific behavior into separate state classes.
+ * Useful when an object has multiple states with different behaviors and frequent state transitions.
+ * 
+ * 
+ * 
+ * ================================
+ * 9. Strategy Pattern
+ * ================================
+ * Defines a family of algorithms and encapsulates each one into separate classes.
+ * Allows algorithms or behaviors to be selected and changed dynamically at runtime.
+ * Useful when multiple approaches exist for a task and switching behavior is needed.
+ * 
+ * 
+ * 
+ * ================================
+ * 10. Template Method Pattern
+ * ================================
+ * Defines the skeleton of an algorithm in a base class while allowing subclasses to override specific steps.
+ * Ensures the overall structure of the algorithm remains unchanged while customizing certain parts.
+ * Useful when multiple classes follow the same process but differ in implementation details.
+ * 
+ * 
+ * 
+ * ================================
+ * 11. Visitor Pattern
+ * ================================
+ * Separates an algorithm from the objects on which it operates by moving logic into a visitor class.
+ * Allows adding new operations without modifying the object structure.
+ * Useful when you need to perform different operations on a set of object structures.
+ * 
+ */
+public class BehavioralPatterns {
+    public static void main(String[] args) {
+        System.out.println("Refer comments for Behavioral Design Patterns guide.");
+    }
+}
