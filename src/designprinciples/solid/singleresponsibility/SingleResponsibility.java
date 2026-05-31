@@ -71,7 +71,7 @@ class UserRepository {
     }
 }
 
-class SingleResponsibilityMain {
+class SingleResponsibility {
     public static void main(String[] args) {
 
         EmailService emailService = new EmailService();
