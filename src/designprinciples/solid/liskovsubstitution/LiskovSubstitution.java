@@ -58,17 +58,16 @@ class LiskovSubstitutionMain {
 
         letBirdFly(sparrow);
 
-        Penguin penguin = new Penguin();
-
+        // Penguin penguin = new Penguin();
         //Cannot pass Penguin here in letBirdFly
         //Compiler prevents incorrect usage
         //letBirdFly(penguin); //shows error
 
 
         //Valid substitutions, a child object can be used wherever its parent type is expected
-        Bird bird = new Sparrow();        // OK
-        Bird bird2 = new FlyingBird();    // OK
-        FlyingBird fb = new Sparrow();    // OK
+        // Bird bird = new Sparrow();        // OK
+        // Bird bird2 = new FlyingBird();    // OK
+        // FlyingBird fb = new Sparrow();    // OK
 
         //Invalid Direction
         //Sparrow sparrow = new Bird(); // Not allowed, not every Bird is a Sparrow
