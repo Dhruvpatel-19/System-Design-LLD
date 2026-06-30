@@ -1,4 +1,4 @@
-package dependencymanagement;
+package dependencymanagement.inversionofcontrol;
 
 /*
  - Inversion of Control is a design principle where the control of creating and managing 
@@ -12,7 +12,7 @@ package dependencymanagement;
 //Without IoC
 //NotificationService creates EmailService. So the control remains inside NotificationService. This is NOT IoC.
 //Suppose tomorrow you want SMSService, EmailService. Again modify NotificationService. High coupling.
-class EmailServiceWithouIoC {
+class EmailServiceWithoutIoC {
 
     public void send(String message) {
         System.out.println("Email: " + message);
@@ -20,7 +20,7 @@ class EmailServiceWithouIoC {
 }
 class NotificationServiceWithouIoC {
     
-    private EmailServiceWithouIoC emailService = new EmailServiceWithouIoC();
+    private EmailServiceWithoutIoC emailService = new EmailServiceWithoutIoC();
 
     public void notifyUser() {
         emailService.send("Hello User");
