@@ -22,6 +22,14 @@ Recommended Learning Order:
   CAS operations, and advanced locking mechanisms like ReentrantLock,
   ReadWriteLock, and StampedLock.
 
+  
+3. Thread Communication
+-----------------------
+- Learn how threads coordinate and exchange signals while working together on
+  shared tasks.
+- Covers mechanisms like wait(), notify(), notifyAll(), Condition, Semaphore,
+  CountDownLatch, CyclicBarrier, and Phaser to control execution order and
+  synchronization between threads.
 */
 public class Concurrency {
     public static void main(String[] args) {
