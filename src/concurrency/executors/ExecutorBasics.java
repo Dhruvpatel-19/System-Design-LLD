@@ -32,9 +32,7 @@ The Executor Framework solves these problems using thread pools.
 --------------------------------------------------------------------------------
 1. Executor
 --------------------------------------------------------------------------------
-Definition
-----------
-Executor is the root interface of the Executor Framework.
+Definition: Executor is the root interface of the Executor Framework.
 
 Method:
     void execute(Runnable task);
@@ -52,9 +50,7 @@ executor.execute(task);
 --------------------------------------------------------------------------------
 2. ExecutorService
 --------------------------------------------------------------------------------
-Definition
-----------
-ExecutorService extends Executor and provides lifecycle management.
+Definition: ExecutorService extends Executor and provides lifecycle management.
 
 Additional Features:
 - submit()
@@ -72,9 +68,7 @@ ExecutorService service = Executors.newFixedThreadPool(2);
 --------------------------------------------------------------------------------
 3. Callable
 --------------------------------------------------------------------------------
-Definition
-----------
-Callable represents a task that returns a value.
+Definition: Callable represents a task that returns a value.
 
 Method:
     V call() throws Exception;
@@ -95,9 +89,7 @@ Callable must be submitted using submit().
 --------------------------------------------------------------------------------
 4. Future
 --------------------------------------------------------------------------------
-Definition
-----------
-Future represents the result of an asynchronous computation.
+Definition: Future represents the result of an asynchronous computation.
 
 Important Methods:
 get(): Waits for completion and returns result.
@@ -135,15 +127,13 @@ Result Returned
 --------------------------------------------------------------------------------
 Executor vs ExecutorService
 --------------------------------------------------------------------------------
-Executor
----------
+Executor:
 - execute()
 - Fire-and-forget
 - No shutdown
 - No Future
 
-ExecutorService
----------------
+ExecutorService:
 - execute()
 - submit()
 - shutdown()
@@ -155,14 +145,12 @@ ExecutorService
 --------------------------------------------------------------------------------
 Runnable vs Callable
 --------------------------------------------------------------------------------
-Runnable
----------
+Runnable:
 - run()
 - Returns void
 - Cannot throw checked exceptions
 
-Callable
----------
+Callable:
 - call()
 - Returns value
 - Can throw checked exceptions
@@ -219,7 +207,7 @@ Real-world Uses
 ================================================================================
 */
 
-public class ExecutorBasics {
+class ExecutorBasics {
 
     /*
      * =========================================================================
