@@ -247,6 +247,7 @@ public class ThreadPools {
 
         System.out.println("\n========== ThreadPoolExecutor Example ==========");
 
+        @SuppressWarnings("resource")
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
                 2,                              // Core threads
                 4,                              // Maximum threads
