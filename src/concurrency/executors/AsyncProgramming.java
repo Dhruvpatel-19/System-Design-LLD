@@ -161,39 +161,35 @@ Continue execution
 Callback executes when result arrives
 
 
-Important Methods:
+Important CompletableFuture Methods:
 1. supplyAsync(): Used when asynchronous task returns a value.
-
 Example:
 CompletableFuture<String> future =
         CompletableFuture.supplyAsync(
             () -> "Data"
         );
 
-    
-2. runAsync(): Used when asynchronous task does not return a value.
 
+2. runAsync(): Used when asynchronous task does not return a value.
 Example:
 CompletableFuture.runAsync(
     () -> saveData()
 );
 
 
-
 3. thenApply(): Transforms the result of previous task.
-
 Example:
-Fetch User
-    |
-    |
-Convert User Object
-    |
-    |
-Return Result
+String
+  |
+  v
+Convert to uppercase
+
+.thenApply(
+    String::toUpperCase
+)
 
 
 4. thenAccept(): Consumes the result.
-
 Example:
 .thenAccept(
     result -> print(result)
@@ -201,7 +197,6 @@ Example:
 
 
 5. thenCombine(): Combines results from two independent tasks.
-
 Example:
 User Service
       |
@@ -212,12 +207,10 @@ Payment Service
 
 
 6. exceptionally(): Handles exceptions in async execution.
-
 Example:
 .exceptionally(
     error -> defaultValue
 )
-
 
 
 --------------------------------------------------------------------------------
@@ -235,7 +228,6 @@ thenApply(): Used when result transformation is required.
 thenCompose(): Used when chaining another asynchronous operation.
 
 Example:
-
 Future<User>
       |
       |
@@ -243,7 +235,6 @@ Fetch Orders
       |
       |
 Future<List<Order>>
-
 
 
 ----------------------------------------------------------
@@ -263,14 +254,12 @@ CompletableFuture:
 ================================================================================
 Real World Uses
 ================================================================================
-
 ✔ Calling multiple APIs concurrently
 ✔ Microservice communication
 ✔ Parallel database calls
 ✔ Asynchronous file processing
 ✔ Background computation
 ✔ Event-driven systems
-
 ================================================================================
 */
 

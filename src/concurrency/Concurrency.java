@@ -30,6 +30,15 @@ Recommended Learning Order:
 - Covers mechanisms like wait(), notify(), notifyAll(), Condition, Semaphore,
   CountDownLatch, CyclicBarrier, and Phaser to control execution order and
   synchronization between threads.
+
+
+4. Executors
+-----------------------
+- Learn how Java manages and executes tasks using higher-level concurrency
+  utilities instead of manually creating and managing threads.
+- Covers Executor, ExecutorService, ThreadPoolExecutor, thread pools, Future,
+  Callable, CompletableFuture, ScheduledExecutorService, and ForkJoinPool.
+
 */
 public class Concurrency {
     public static void main(String[] args) {
