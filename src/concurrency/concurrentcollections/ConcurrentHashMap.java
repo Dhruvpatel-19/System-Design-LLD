@@ -175,14 +175,12 @@ computeIfAbsent(): Computes and inserts a value only if the key is absent.
          k -> createValue(k)
      );
 If the key already exists, the function is not executed.
-
 Example:
      map.computeIfAbsent(
          "apple",
          k -> 10
      );
 If apple does not exist: apple -> 10. If apple already exists: existing value remains unchanged.
-
 This is useful for lazily creating values.
 Example:
      map.computeIfAbsent(
@@ -191,8 +189,7 @@ Example:
      );
 
 
-computeIfPresent():
-Computes a new value only if the key already exists.
+computeIfPresent(): Computes a new value only if the key already exists.
      map.computeIfPresent(
          "apple",
          (key, value) -> value + 1
@@ -203,21 +200,16 @@ If apple exists: its value is updated. If apple does not exist: nothing happens.
 merge(): merge() is one of the most useful ConcurrentHashMap methods.
 Example:
      map.merge(word, 1, Integer::sum);
-
 If the key does not exist: apple -> 1
 If the key already exists: apple -> 2
-
 then another:
      map.merge("apple", 1, Integer::sum);
 produces:
      apple -> 3
-
 The general idea is:
      merge(key, value, remappingFunction)
-
 If key is absent: insert value
 If key is present: combine existing value and new value using the function.
-
 This makes merge() extremely useful for frequency counters.
 Example:
      apple  -> 3
@@ -241,13 +233,13 @@ ConcurrentHashMap provides several atomic compound operations. These are especia
 
 Example of a non-atomic approach:
      Integer count = map.get("apple");
-
+     
      if (count == null) {
          map.put("apple", 1);
      } else {
          map.put("apple", count + 1);
      }
-
+     
 Multiple threads can interfere between get() and put().
 Instead, use: map.merge("apple", 1, Integer::sum);
 
@@ -289,7 +281,7 @@ Instead of:
      if (!map.containsKey(key)) {
          map.put(key, createValue(key));
      }
-
+         
 Use:
      map.computeIfAbsent(
          key,
@@ -303,7 +295,6 @@ This guarantees that the computation and insertion are performed atomically for 
 merge() FREQUENCY COUNTER
 ------------------------------------------------------------
 A very common use case is counting frequencies.
-
 Suppose we have:
      apple
      banana
@@ -315,12 +306,10 @@ Suppose we have:
      orange
      banana
      banana
-
 We want:
      apple  -> 3
      banana -> 5
      orange -> 2
-
 Use:
      map.merge(word, 1, Integer::sum);
 
@@ -336,12 +325,10 @@ The same approach works safely when multiple threads are processing words concur
 ITERATION
 ------------------------------------------------------------
 ConcurrentHashMap supports concurrent iteration. Its iterators are weakly consistent.
-
 This means:
      - They do not throw ConcurrentModificationException merely because another thread modifies the map.
      - They may reflect modifications made during iteration.
      - They do not represent a completely fixed snapshot.
-
 Example:
      for (Map.Entry<String, Integer> entry : map.entrySet()) {
          System.out.println(entry.getKey() + " -> " + entry.getValue());
@@ -372,7 +359,6 @@ Think:
 NULL RESTRICTIONS
 ------------------------------------------------------------
 ConcurrentHashMap does NOT allow null keys or null values.
-
 Examples:
      map.put(null, 1);
      map.put("apple", null);
