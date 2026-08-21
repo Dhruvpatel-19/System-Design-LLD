@@ -39,6 +39,14 @@ Recommended Learning Order:
 - Covers Executor, ExecutorService, ThreadPoolExecutor, thread pools, Future,
   Callable, CompletableFuture, ScheduledExecutorService, and ForkJoinPool.
 
+
+5. Concurrent Collections
+-------------------------
+- Learn thread-safe and concurrent data structures provided by Java's
+  java.util.concurrent package.
+- Covers concurrent queues, blocking queues, copy-on-write collections,
+  concurrent hash maps, and concurrent sorted maps.
+
 */
 public class Concurrency {
     public static void main(String[] args) {
