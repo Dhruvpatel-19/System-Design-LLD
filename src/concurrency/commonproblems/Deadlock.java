@@ -133,11 +133,11 @@ class DeadlockDemo {
 
         Thread thread1 = new Thread(() -> {
 
-            synchronized (LOCK_1) {
+            synchronized(LOCK_1){
 
                 System.out.println("Thread 1 acquired LOCK_1");
 
-                synchronized (LOCK_2) {
+                synchronized(LOCK_2){
                     System.out.println("Thread 1 acquired LOCK_2");
                 }
             }
@@ -145,11 +145,11 @@ class DeadlockDemo {
 
         Thread thread2 = new Thread(() -> {
 
-            synchronized (LOCK_1) {
+            synchronized(LOCK_1){
 
                 System.out.println("Thread 2 acquired LOCK_1");
-
-                synchronized (LOCK_2) {
+                
+                synchronized(LOCK_2){
                     System.out.println("Thread 2 acquired LOCK_2");
                 }
             }
@@ -168,7 +168,6 @@ class DeadlockDemo {
 
 
     private static void sleep() {
-
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
@@ -180,10 +179,10 @@ class DeadlockDemo {
     public static void main(String[] args) {
 
         System.out.println("\n========== Deadlock Prevention ==========");
-        //demonstrateDeadlockPrevention();
+        demonstrateDeadlockPrevention();
 
         //Do not call demonstrateDeadlock() here.
-        //It intentionally creates a deadlock, so the program will never terminate.
-        demonstrateDeadlock();
+        //It intentionally creates a deadlock, so the program will never terminate
+        //demonstrateDeadlock();
     }
 }
