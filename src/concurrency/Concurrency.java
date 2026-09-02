@@ -47,6 +47,14 @@ Recommended Learning Order:
 - Covers concurrent queues, blocking queues, copy-on-write collections,
   concurrent hash maps, and concurrent sorted maps.
 
+
+6. Common Problems
+------------------
+- Learn about common problems that can occur when multiple threads execute
+  concurrently, especially when accessing shared resources or acquiring locks.
+- Covers Race Condition, Deadlock, Livelock, and Starvation, along with
+  techniques such as Thread Safety, Thread Confinement, and Immutability.
+
 */
 public class Concurrency {
     public static void main(String[] args) {

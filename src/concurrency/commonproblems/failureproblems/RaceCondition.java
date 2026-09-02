@@ -1,4 +1,4 @@
-package concurrency.commonproblems;
+package concurrency.commonproblems.failureproblems;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

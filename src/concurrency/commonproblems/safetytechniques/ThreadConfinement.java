@@ -1,4 +1,4 @@
-package concurrency.commonproblems;
+package concurrency.commonproblems.safetytechniques;
 
 import java.util.ArrayList;
 import java.util.List;
