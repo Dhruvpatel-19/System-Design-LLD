@@ -17,7 +17,7 @@ to see the updated value of stop.
 Using volatile establishes the required visibility guarantee.
 */
 
-public class VisibilityDemo {
+public class Visibility {
 
     //Try removing 'volatile' to observe the visibility issue.
     private static volatile boolean running = true;
