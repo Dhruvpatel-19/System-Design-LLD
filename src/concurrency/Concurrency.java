@@ -55,6 +55,11 @@ Recommended Learning Order:
 - Covers Race Condition, Deadlock, Livelock, and Starvation, along with
   techniques such as Thread Safety, Thread Confinement, and Immutability.
 
+
+7. Java Memory Model (JMM)
+--------------------------
+- Learn how Java handles memory visibility, ordering, and communication between threads.
+- Covers Stack vs Heap, JMM, Visibility, Happens-Before, Reordering, and Memory Barriers.
 */
 public class Concurrency {
     public static void main(String[] args) {
